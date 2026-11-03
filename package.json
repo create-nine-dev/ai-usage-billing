@@ -1,0 +1,31 @@
+{
+  "name": "ai-usage-billing",
+  "version": "1.0.0",
+  "description": "AI Usage Billing Computation using CAPM",
+  "repository": "https://github.com/create-nine-dev/ai-usage-billing.git",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "@sap/cds": "^9",
+    "express": "^4",
+    "@cap-js/hana": "^2",
+    "@sap/xssec": "^4"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "@cap-js/sqlite": "^2",
+    "@cap-js/cds-types": "^0.12.0"
+  },
+  "scripts": {
+    "start": "cds-serve"
+  },
+  "cds": {
+    "requires": {
+      "[production]": {
+        "auth": "dummy"
+      }
+    }
+  }
+}
